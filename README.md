@@ -26,6 +26,22 @@ RSpec.configure do |configuration|
 end
 ```
 
+You have now access to `have_attribute` matcher.
+
+```
+class Post
+  include Virtus
+  attribute :title, String
+  attribute :first_name, String
+  attribute :last_name, String
+end
+
+describe Post do
+  it { should have_attribute(:title) }
+  it { should have_attributes(:first_name, :last_name) }
+end
+```
+
 ## Contributing
 
 1. Fork it

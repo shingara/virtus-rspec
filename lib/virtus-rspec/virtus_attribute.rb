@@ -34,5 +34,6 @@ module Virtus
     def have_attributes(*args)
       HaveAttributeMatcher.new(*args)
     end
+    alias :have_attribute :have_attributes
   end
 end
