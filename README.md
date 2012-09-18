@@ -20,9 +20,11 @@ Or install it yourself as:
 
 You need include the Virtus::Matchers in your rspec config file
 
+```
 RSpec.configure do |configuration|
   configuration.include Virtus::Matchers
 end
+```
 
 ## Contributing
 
